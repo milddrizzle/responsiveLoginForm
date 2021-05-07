@@ -273,10 +273,11 @@ input::placeholder {
 
 @media only screen and (max-width: 768px) {
   .container .section-one .social-links .facebook {
-    left: -8.5rem;
+    left: -8.2rem;
   }
   .container .section-one .social-links .facebook span {
     font-size: small;
+    padding-right: 0.9rem;
   }
   .container .section-one .social-links .facebook .icon {
     height: 4rem;
