@@ -63,6 +63,7 @@ body {
 
 .container {
   height: 75vh;
+  min-height: 30rem;
   width: 80vw;
   background-color: $formBackgroundColor;
   .section-one {
