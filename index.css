@@ -273,7 +273,7 @@ input::placeholder {
 
 @media only screen and (max-width: 768px) {
   .container {
-    height: 30rem;
+    height: 35rem;
   }
   .container .section-one .social-links .facebook {
     left: -8.2rem;
