@@ -63,7 +63,6 @@ body {
 
 .container {
   height: 75vh;
-  min-height: 30rem;
   width: 80vw;
   background-color: $formBackgroundColor;
   .section-one {
@@ -166,6 +165,7 @@ input {
 
 @media only screen and (max-width: 768px) {
   .container {
+    height: 30rem;
     .section-one {
       .social-links {
         .facebook {
