@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200&display=swap");
+
+$mainFont: "Montserrat", sans-serif;
+
+$gradientColor1: #560bad;
+$gradeintColor2: #8e60c4;
+$formBackgroundColor: #300169;
+$pinkOutline: #a31a6a;
+$loginButtonColor: rgb(96, 196, 96);
+$loginButtonTextColor: white;
+$newAccountButtonColor: #ffd60a;
+$newAccountButtonTextColor: rgb(36, 34, 34);
+$inputBackgroundColor: #2b045c;
+$inputPlaceholderColor: rgba(255, 255, 255, 0.548);
+$loginWithAccountsTextColor: white;
+$inputTextColor: white;
+$forgetHoverColor: white;
+
+@mixin buttonStyles($backgroundColor, $fontColor) {
+  padding: 0.8rem 1.5rem;
+  width: 22rem;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+  font-size: medium;
+  background-color: $backgroundColor;
+  color: $fontColor;
+  cursor: pointer;
+  transition: background 0.5s;
+  &:hover {
+    background: darken($backgroundColor, 20%)
+      radial-gradient(circle, transparent 1%, darken($backgroundColor, 20%) 1%)
+      center/15000%;
+  }
+  &:active {
+    background-color: darken($backgroundColor, 30%);
+    background-size: 100%;
+    transition: background 0s;
+  }
+}
+
+@mixin enableFlex($direction: false) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @if $direction {
+    flex-direction: column;
+  }
+}
+
+* {
+  font-family: $mainFont;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, $gradientColor1, $gradeintColor2);
+  height: 100vh;
+  width: 100vw;
+  @include enableFlex();
+}
+
+.container {
+  height: 75vh;
+  width: 80vw;
+  background-color: $formBackgroundColor;
+  .section-one {
+    @include enableFlex(true);
+    height: 80%;
+    border-bottom: 0.05rem $pinkOutline solid;
+    .social-links {
+      display: flex;
+      margin-bottom: 2rem;
+      position: relative;
+      height: 20%;
+      cursor: pointer;
+      .facebook {
+        @include enableFlex();
+        position: absolute;
+        left: -10.5rem;
+        span {
+          width: 50%;
+          color: $loginWithAccountsTextColor;
+          font-size: 0.8rem;
+          padding-right: 0.4rem;
+        }
+        .icon {
+          height: 6rem;
+          width: 6.5rem;
+          border-radius: 100%;
+          border: $pinkOutline 0.1rem solid;
+          @include enableFlex();
+          cursor: pointer;
+          img {
+            height: 4rem;
+          }
+        }
+      }
+      .twitter {
+        @include enableFlex();
+        position: absolute;
+        right: -12rem;
+        span {
+          width: 50%;
+          color: $loginWithAccountsTextColor;
+          padding-left: 0.4rem;
+          font-size: 0.8rem;
+        }
+        .icon {
+          height: 6rem;
+          width: 6.3rem;
+          border-radius: 100%;
+          border: $pinkOutline 0.1rem solid;
+          @include enableFlex();
+          background-color: $formBackgroundColor;
+          box-shadow: -0.5rem 0px $formBackgroundColor;
+
+          img {
+            height: 4rem;
+          }
+        }
+      }
+    }
+    .main-form {
+      @include enableFlex(true);
+      button {
+        @include buttonStyles($loginButtonColor, $loginButtonTextColor);
+      }
+      a {
+        text-decoration: none;
+        @include enableFlex();
+        color: $pinkOutline;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          color: $forgetHoverColor;
+        }
+      }
+    }
+  }
+  .section-two {
+    height: 20%;
+    @include enableFlex();
+    button {
+      @include buttonStyles($newAccountButtonColor, $newAccountButtonTextColor);
+    }
+  }
+}
+
+input {
+  padding: 0.8rem 1rem;
+  width: 22rem;
+  border-radius: 0.2rem;
+  border: $pinkOutline 0.01rem solid;
+  color: $inputTextColor;
+  background-color: $inputBackgroundColor;
+  margin-bottom: 0.8rem;
+  font-size: large;
+  &::placeholder {
+    color: $inputPlaceholderColor;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    .section-one {
+      .social-links {
+        .facebook {
+          left: -8.5rem;
+          span {
+            font-size: small;
+          }
+          .icon {
+            height: 4rem;
+            width: 4rem;
+            border-radius: 100%;
+            img {
+              height: 3rem;
+            }
+          }
+        }
+        .twitter {
+          right: -10rem;
+          span {
+            font-size: small;
+          }
+          .icon {
+            height: 4rem;
+            width: 4rem;
+            border-radius: 100%;
+            img {
+              height: 3rem;
+            }
+          }
+        }
+      }
+      .main-form {
+        input {
+          width: 15rem;
+        }
+        button {
+          width: 15rem;
+        }
+      }
+    }
+    .section-two {
+      button {
+        width: 15rem;
+      }
+    }
+  }
+}

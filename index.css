@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#560bad), to(#8e60c4));
+  background: linear-gradient(to right, #560bad, #8e60c4);
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  height: 75vh;
+  width: 80vw;
+  background-color: #300169;
+}
+
+.container .section-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80%;
+  border-bottom: 0.05rem #a31a6a solid;
+}
+
+.container .section-one .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+  position: relative;
+  height: 20%;
+  cursor: pointer;
+}
+
+.container .section-one .social-links .facebook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: -10.5rem;
+}
+
+.container .section-one .social-links .facebook span {
+  width: 50%;
+  color: white;
+  font-size: 0.8rem;
+  padding-right: 0.4rem;
+}
+
+.container .section-one .social-links .facebook .icon {
+  height: 6rem;
+  width: 6.5rem;
+  border-radius: 100%;
+  border: #a31a6a 0.1rem solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.container .section-one .social-links .facebook .icon img {
+  height: 4rem;
+}
+
+.container .section-one .social-links .twitter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: -12rem;
+}
+
+.container .section-one .social-links .twitter span {
+  width: 50%;
+  color: white;
+  padding-left: 0.4rem;
+  font-size: 0.8rem;
+}
+
+.container .section-one .social-links .twitter .icon {
+  height: 6rem;
+  width: 6.3rem;
+  border-radius: 100%;
+  border: #a31a6a 0.1rem solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #300169;
+  -webkit-box-shadow: -0.5rem 0px #300169;
+          box-shadow: -0.5rem 0px #300169;
+}
+
+.container .section-one .social-links .twitter .icon img {
+  height: 4rem;
+}
+
+.container .section-one .main-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .section-one .main-form button {
+  padding: 0.8rem 1.5rem;
+  width: 22rem;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+  font-size: medium;
+  background-color: #60c460;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+.container .section-one .main-form button:hover {
+  background: #338b33 radial-gradient(circle, transparent 1%, #338b33 1%) center/15000%;
+}
+
+.container .section-one .main-form button:active {
+  background-color: #266526;
+  background-size: 100%;
+  -webkit-transition: background 0s;
+  transition: background 0s;
+}
+
+.container .section-one .main-form a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #a31a6a;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.container .section-one .main-form a:hover {
+  color: white;
+}
+
+.container .section-two {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .section-two button {
+  padding: 0.8rem 1.5rem;
+  width: 22rem;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+  font-size: medium;
+  background-color: #ffd60a;
+  color: #242222;
+  cursor: pointer;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+.container .section-two button:hover {
+  background: #a38800 radial-gradient(circle, transparent 1%, #a38800 1%) center/15000%;
+}
+
+.container .section-two button:active {
+  background-color: #705d00;
+  background-size: 100%;
+  -webkit-transition: background 0s;
+  transition: background 0s;
+}
+
+input {
+  padding: 0.8rem 1rem;
+  width: 22rem;
+  border-radius: 0.2rem;
+  border: #a31a6a 0.01rem solid;
+  color: white;
+  background-color: #2b045c;
+  margin-bottom: 0.8rem;
+  font-size: large;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.548);
+}
+
+input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.548);
+}
+
+input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.548);
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.548);
+}
+
+@media only screen and (max-width: 768px) {
+  .container .section-one .social-links .facebook {
+    left: -8.5rem;
+  }
+  .container .section-one .social-links .facebook span {
+    font-size: small;
+  }
+  .container .section-one .social-links .facebook .icon {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+  }
+  .container .section-one .social-links .facebook .icon img {
+    height: 3rem;
+  }
+  .container .section-one .social-links .twitter {
+    right: -10rem;
+  }
+  .container .section-one .social-links .twitter span {
+    font-size: small;
+  }
+  .container .section-one .social-links .twitter .icon {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+  }
+  .container .section-one .social-links .twitter .icon img {
+    height: 3rem;
+  }
+  .container .section-one .main-form input {
+    width: 15rem;
+  }
+  .container .section-one .main-form button {
+    width: 15rem;
+  }
+  .container .section-two button {
+    width: 15rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */
